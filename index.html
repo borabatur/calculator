@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>Simple Calculator</title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="calc-container" id="calc-container">
+				<div class="buttons">
+					<div class="output" id="output">0</div>
+					<button type="button" class="clear" value="clear" id="clear">
+						AC
+					</button>
+					<button type="button" class="sign" value="sign">+/-</button>
+					<button type="button" class="modulo operator" id="modulo" value="%">
+						%
+					</button>
+					<button type="button" class="delete" id="delete">
+						<i class="fa-solid fa-delete-left" id="delete-icon"></i>
+					</button>
+					<button type="button" class="number" value="7">7</button>
+					<button type="button" class="number" value="8">8</button>
+					<button type="button" class="number" value="9">9</button>
+					<button type="button" class="operator" value="÷">÷</button>
+					<button type="button" class="number" value="4">4</button>
+					<button type="button" class="number" value="5">5</button>
+					<button type="button" class="number" value="6">6</button>
+					<button type="button" class="operator" value="*">*</button>
+					<button type="button" class="number" value="1">1</button>
+					<button type="button" class="number" value="2">2</button>
+					<button type="button" class="number" value="3">3</button>
+					<button type="button" class="operator" value="-">-</button>
+
+					<button type="button" class="number" id="zero" value="0">0</button>
+					<button type="button" class="decimal" id="decimal" value=".">
+						.
+					</button>
+					<button type="button" class="equals" id="equals" value="=">=</button>
+					<button type="button" class="operator" value="+">+</button>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<a href="https://github.com/borabatur/" target="_blank"
+				>Webpage by: borabatur@github</a
+			>
+		</footer>
+
+		<script src="script.js" async defer></script>
+	</body>
+</html>

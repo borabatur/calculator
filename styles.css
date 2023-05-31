@@ -1,0 +1,91 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: rgb(58, 58, 57);
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90vh;
+}
+
+.calc-container {
+	height: auto;
+	width: auto;
+	padding: 20px;
+	border: 5px solid black;
+}
+
+.buttons {
+	display: grid;
+	width: 400px;
+	height: auto;
+	grid-template: repeat(6, 90px) / repeat(4, 1fr);
+	gap: 3px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.buttons > #output {
+	width: auto;
+	height: auto;
+	grid-column: span 4;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 10px;
+	color: white;
+	background-color: rgb(85, 131, 153);
+
+	border: 3px solid black;
+	border-radius: 5px;
+	font-size: 30px;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+.buttons > button {
+	border: none;
+	color: white;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.buttons > button:hover {
+	background-image: linear-gradient(rgb(0 0 0/55%) 0 0);
+	cursor: pointer;
+}
+
+.buttons > #zero {
+	grid-column: span 1;
+}
+
+.buttons > .number,
+.decimal,
+.equals,
+.delete,
+.operator,
+.clear,
+.sign,
+#modulo {
+	background-color: darkslategrey;
+}
+
+footer {
+	text-align: center;
+	color: blanchedalmond;
+}
+
+footer a {
+	font-family: Courier;
+	text-decoration: none;
+	color: inherit;
+}
